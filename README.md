@@ -1,13 +1,9 @@
 !!!! Run these commands first !!!!
-python -m venv my_env
-.\my_env\Scripts\Activate
-pip install django
-pip install djangorestframework
-pip freeze > requirements.txt
+1)python -m venv my_env 2).\my_env\Scripts\Activate 3)pip install django 4)pip install djangorestframework 5)pip freeze > requirements.txt
 
 !!! If you want to run the server !!!
-.\my_env\Scripts\Activate
-python manage.py runserver
+1).\my_env\Scripts\Activate
+2)python manage.py runserver
 
 Plan a Meeting: Users can define:
 
