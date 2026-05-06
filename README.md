@@ -1,8 +1,19 @@
+!!!! Run these commands first !!!!
+python -m venv my_env
+.\my_env\Scripts\Activate
+pip install django
+pip install djangorestframework
+pip freeze > requirements.txt
+
+!!! If you want to run the server !!!
+.\my_env\Scripts\Activate
+python manage.py runserver
+
 Plan a Meeting: Users can define:
 
--The date of the meeting.
--The duration (length) of the meeting.
--Assign a room to the meeting (the application handles the relationship between meetings and rooms).
+The date of the meeting.
+/The duration (length) of the meeting.
+/Assign a room to the meeting (the application handles the relationship between meetings and rooms).
 
 View Meetings: A list of planned meetings (e.g., "Seance 01," "Seance 02") is displayed on the home page.
 
