@@ -14,7 +14,7 @@ def new(request):
         form = MeetingForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect("home")
+            return redirect("website:home")
     else:
         form = MeetingForm()
     return render(request, "meetings/new.html", {"form": form})

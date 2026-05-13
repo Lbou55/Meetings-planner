@@ -14,7 +14,6 @@ class MeetingSerializer(serializers.ModelSerializer):
         fields = [
             'id',
             'title',
-            'description',
             'start_time',
             'end_time',
             'room',

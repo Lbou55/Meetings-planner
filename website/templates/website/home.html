@@ -6,9 +6,9 @@
 <ul>
     {% for meeting in meetings %}
     <li>
-        <a href="{% url 'detail' meeting.id %}">{{ meeting.title }}</a>
+        <a href="{% url 'meetings:detail' %}">{{ meeting.title }}</a>
     </li>
     {% endfor %}
 </ul>
-<a href="{% url 'rooms' %}">Room List</a>
+<a href="{% url 'meetings:rooms' %}">Room List</a>
 {% endblock %}
